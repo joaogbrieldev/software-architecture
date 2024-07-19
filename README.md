@@ -19,3 +19,9 @@
 ### Extensibilidade
 ### Fácil instalação
 ### Fácil manutenção
+
+## Características arquiteturais: Cross-cuting
+### Acessibilidade
+### Processo de retenção e recuperação de dados
+### Autenticação e autorização
+### Segurança

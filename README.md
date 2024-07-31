@@ -78,4 +78,40 @@
 		- Banco de dados externo
 			- Redis
 	- Edge Computing
+		- Cache realizado mais próximo do usuário
+		- Evita a requisição chegar até o Cloud Provider / Infra
+		- Normalmente arquivos estáticos
+		- CDN - Content Delivery Network
+		- Cloudflare workers
+		- Vercel
+		- Akamai
+	
+### Escalabilidade
+	- Escalabilidade é a capacidade de sistemas suportarem o aumento (ou a redução) dos workloads incrementando (ou reduzindo) o custo em menor ou igual proporção
+ 
+### Escalabilidade vs Performance
+	- Enquanto performance tem o foco em reduzir a latência e aumentar o throughput, a escalabilidade visa termos a possibilidade de aumentar ou diminuir o throughput adicionando ou removendo a capacidade computacional
+	- Escala vertical 🔝 Recursos Computacionais
+	- Escala Horizontal 🔜 Proxy, Microservices, Load Balancer
+
+### Escala de banco de dados
+	- Aumentando recursos computacionais
+	- Distribuindo responsabilidades (escrita vs leitura)
+	- Shards de forma horizontal
+	- Serverless
+	- Otimização de queries e índices
+		- Trabalhar com índices de forma consciente
+		- APM (Application performance monitoring) nas queries
+		- Explain na queries
+		- CQRS (Command Query Responsibility Segregation)
+
+### Estratégias para proteger o software
+	- Health check
+		- Sem sinais vitais, não é possível saber a 'saúde' de um sistema 
+	- Rate Limit
+		- Protege o sistema baseado no que ele foi projetado para suportar
+	- Circuit breaker
+		- Protege o sistema fazendo com que as requisições feitas para ele sejam negadas. Ex: 500
+		- Circuito fechado = Requisições chegam normalmente no sistema 
+		- Circuito aberto = Requisições não chegam ao sistema. Erro instantâneo no cliente
 		- 

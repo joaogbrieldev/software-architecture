@@ -113,5 +113,4 @@
 	- Circuit breaker
 		- Protege o sistema fazendo com que as requisições feitas para ele sejam negadas. Ex: 500
 		- Circuito fechado = Requisições chegam normalmente no sistema 
-		- Circuito aberto = Requisições não chegam ao sistema. Erro instantâneo no cliente
-		- 
+		- Circuito aberto = Requisições não chegam ao sistema. Erro instantâneo no cliente.
